@@ -119,7 +119,7 @@ export default class CommentForm extends Component {
 
     render() {
         return (
-            <div style={{'margin-top': '10px'}}>
+            <div style={{'margin-top': '10px', color :'white'}}>
                 {this.state.comments &&
                 this.state.comments.map(comment => (
                     <div key={comment._id} style={{'border': 'solid 1px black', 'border-radius': '5px'}}>
