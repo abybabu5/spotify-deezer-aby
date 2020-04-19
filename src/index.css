@@ -113,8 +113,11 @@ a:hover {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    color: white !important;
 }
-
+.table {
+    color: white !important;
+}
 .artist-name {
     font-size: 12px;
     font-weight: bold;
