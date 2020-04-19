@@ -16,7 +16,7 @@ class Main extends Component {
     state = {album: null};
  playSong = (album) => {
     this.setState({album})
-}
+};
     render() {
         return (
             <>

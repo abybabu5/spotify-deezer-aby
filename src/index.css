@@ -1,9 +1,9 @@
-
 body {
     margin: 0;
     font-family: 'Dosis',"sans-serif","Ubuntu"!important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #343a40 !important;
 
 
 }
@@ -12,23 +12,43 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
 .logo {
     align-self: center;
     font-weight: bold;
     text-align: center;
     font-size: 30px;
+    color: white;
+}
+.side-bar-links {
+    color: white !important;
+}
+.side-bar-links:hover{
+    text-decoration: white underline !important;
+}
+
+.Nav {
+    margin: auto;
+}
+.nav-text {
+    margin-left: 20px !important;
 }
 A .Nav .nav-Link :hover {
     text-decoration: underline !important;
     color: aqua!important;
 
+
 }
 a:hover {
     color: white !important;
-    text-decoration: underline !important;
+    text-decoration: chartreuse underline !important;
 }
 .nav-Link {
     position: fixed !important;
+    align-content: center !important;
+
 }
 .sidebar {
     position: fixed;
@@ -40,6 +60,10 @@ a:hover {
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 
+::-webkit-scrollbar {
+    height: 14px;
+    width:  14px;
+}
 .sidebar-sticky {
     position: relative;
     top: 40px;
@@ -64,34 +88,31 @@ a:hover {
 .sidebar .nav-link .feather {
     margin-right: 4px;
     color: #999;
+    position: sticky !important;
 }
 
 .sidebar .nav-link.active {
     color: #007bff;
 }
+.over {
+    position: fixed !important;
+    padding: 15px !important;
+    background-color: #343a40;
+    height: 100vh;
 
-.sidebar .nav-link:hover .feather,
-.sidebar .nav-link.active .feather {
-    color: inherit;
 }
 
-.sidebar-heading {
-    font-size: .75rem;
-    text-transform: uppercase;
+.album-col {
+    box-shadow: 5px 10px black;
+}
+.navbar-expand .navbar-nav {
+    margin: auto;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
-    .sticky-bottom {
-        position: -webkit-sticky;
-        position: sticky;
-        bottom: 0;
-        z-index: 1020;
-        width: 100%;
-    }
-}
 .artist-box {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .artist-name {
@@ -101,11 +122,15 @@ a:hover {
 }
 .artist-name:hover {
     text-decoration: underline;
+
 }
 .artist-picture {
     width: 50px;
     border-radius: 50%;
     margin-right: 10px;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
 }
 .artist-picture-large {
     width: 150px;
@@ -119,4 +144,80 @@ a:hover {
 .track-title {
     text-align: left;
 }
+
+.input-group-text{
+ border-radius: 10px !important;
+
+}
+.search-bar {
+
+    margin-left: 10px;
+
+    flex-grow: 1;
+    background-color: #343a40;
+}
+
+.search-songs{
+padding: 10px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    position: sticky;
+    top: 55px;
+    z-index: 2000;
+}
+
+.input-group>.form-control:not(:first-child) {
+border-radius: 10px !important;
+
+}
+
+.buttons-sidebar-div{
+    margin: auto;
+}
+.button-sidebar {
+ margin-top: 100px;
+    padding: 10px;
+    color: #999999;
+}
+
+.login-btn {
+    background: initial;
+    border: 1px antiquewhite solid;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #333;
+    cursor: default;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 17px;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 0 #EEE;
+    white-space: nowrap;
+
+}
+
+.login-btn:active{
+
+    background: rgba(0, 0, 0, 0.25);
+    text-shadow: 0 1px 0 #AAA;
+}
+
+.login-btn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #686868;
+}
+
+
 

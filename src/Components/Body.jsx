@@ -54,11 +54,9 @@ class Body extends Component {
         return (
             <>
 
-                <Row className="mt-2">
-                    <Col>
+                <div className="mt-2 search-container">
                         <SearchSongs searchFn={this.searchFn.bind(this)}/>
-                    </Col>
-                </Row>
+                </div>
 
                 <Row>
                     {!albums && <Col className="mt-7"><Spinner color="success" /></Col>}

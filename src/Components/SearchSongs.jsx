@@ -20,7 +20,8 @@ class SearchSongs extends Component {
 
     render() {
         return (
-            <InputGroup className="mb-3">
+            <div className={'search-bar'}>
+                <InputGroup className="search-songs">
                 <InputGroup.Prepend>
                     <InputGroup.Text id="basic-addon1">🎧</InputGroup.Text>
                 </InputGroup.Prepend>
@@ -30,6 +31,8 @@ class SearchSongs extends Component {
                     aria-describedby="basic-addon1" id="searchText"
                 />
             </InputGroup>
+            </div>
+
         );
     }
 }

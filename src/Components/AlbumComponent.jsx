@@ -7,10 +7,10 @@ import Comments from "./Comments";
 class AlbumComponent extends Component {
     state = {paused: true};
     audio = new AudioHelper();
-    constructor(props) {
-        super(props);
-        this.myRef = React.createRef();
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.myRef = React.createRef();
+    // }
     togglePlay  = () => {
         this.props.playSong(this.props.album);
     };
@@ -18,7 +18,7 @@ class AlbumComponent extends Component {
         const album = this.props.album;
         return (
             <Row>
-                <Col className={'col'}>
+                <Col className={'col album-col'}>
                     <Card style={{ 'margin': '10px'}}>
                         <a href={'/album/'+ album.album.id}><Card.Img variant="top" src={album.album.cover_big} /></a>
                         <Card.Body>
@@ -28,7 +28,7 @@ class AlbumComponent extends Component {
                                     <a href={'/artist/'+ album.artist.id}><img className="artist-picture" src={album.artist.picture} alt={'#'}/></a>
                                     <div className="artist-name">{album.artist.name}</div>
                                     <div onClick={this.togglePlay}><i
-                                        className="material-icons float-right">play_arrow</i></div>
+                                        className="material-icons cursor-pointer float-right">play_arrow</i></div>
                                 </div>
 
                             </Card.Text>}
