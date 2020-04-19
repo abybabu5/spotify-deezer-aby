@@ -45,6 +45,10 @@ a:hover {
     color: white !important;
     text-decoration: chartreuse underline !important;
 }
+
+.material-icons {
+    color: white;
+}
 .nav-Link {
     position: fixed !important;
     align-content: center !important;
@@ -102,9 +106,6 @@ a:hover {
 
 }
 
-.album-col {
-    box-shadow: 5px 10px black;
-}
 .navbar-expand .navbar-nav {
     margin: auto;
 }
@@ -195,7 +196,7 @@ border-radius: 10px !important;
     border: 1px antiquewhite solid;
     border-radius: 50px;
     box-sizing: border-box;
-    color: #333;
+    color: white;
     cursor: default;
     display: inline-block;
     font-size: 20px;
@@ -207,16 +208,10 @@ border-radius: 10px !important;
     padding: 10px;
     text-decoration: none;
     text-overflow: ellipsis;
-    text-shadow: 0 1px 0 #EEE;
     white-space: nowrap;
 
 }
 
-.login-btn:active{
-
-    background: rgba(0, 0, 0, 0.25);
-    text-shadow: 0 1px 0 #AAA;
-}
 
 .login-btn:hover{
     background-color: rgba(0, 0, 0, 0.2);
