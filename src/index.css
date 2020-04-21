@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Dosis',"sans-serif","Ubuntu"!important;
+    font-family: 'Dosis', "sans-serif", "Ubuntu" !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #343a40 !important;
@@ -14,7 +14,6 @@ code {
 }
 
 
-
 .logo {
     align-self: center;
     font-weight: bold;
@@ -22,25 +21,30 @@ code {
     font-size: 30px;
     color: white;
 }
+
 .side-bar-links {
     color: white !important;
 }
-.side-bar-links:hover{
+
+.side-bar-links:hover {
     text-decoration: white underline !important;
 }
 
 .Nav {
     margin: auto;
 }
+
 .nav-text {
     margin-left: 20px !important;
 }
+
 A .Nav .nav-Link :hover {
     text-decoration: underline !important;
-    color: aqua!important;
+    color: aqua !important;
 
 
 }
+
 a:hover {
     color: white !important;
     text-decoration: chartreuse underline !important;
@@ -52,6 +56,7 @@ a:hover {
     align-content: center !important;
 
 }
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -64,8 +69,9 @@ a:hover {
 
 ::-webkit-scrollbar {
     height: 14px;
-    width:  14px;
+    width: 14px;
 }
+
 .sidebar-sticky {
     position: relative;
     top: 40px;
@@ -96,6 +102,7 @@ a:hover {
 .sidebar .nav-link.active {
     color: #007bff;
 }
+
 .over {
     position: fixed !important;
     padding: 15px !important;
@@ -116,21 +123,25 @@ a:hover {
     background-color: white;
     border-radius: 10px;
     margin: auto !important;
-    padding: 5px 5px!important;
+    padding: 5px 5px !important;
 }
+
 .table {
     color: white !important;
 }
+
 .artist-name {
     font-size: 12px;
     font-weight: bold;
     flex: 1 1 auto;
     color: black;
 }
+
 .artist-name:hover {
     text-decoration: underline;
 
 }
+
 .artist-picture {
     width: 50px;
     border-radius: 50%;
@@ -139,11 +150,13 @@ a:hover {
     min-width: 100%;
     position: relative;
 }
+
 .artist-picture-large {
     width: 150px;
     border-radius: 50%;
     margin-right: 10px;
 }
+
 .song {
     width: 100%;
 }
@@ -152,10 +165,21 @@ a:hover {
     text-align: left;
 }
 
-.input-group-text{
- border-radius: 10px !important;
+.input-group-text {
+    border-radius: 10px !important;
+
 
 }
+#searchText{
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+#basic-addon1 {
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+
+}
+
 .search-bar {
 
     margin-left: 10px;
@@ -164,8 +188,8 @@ a:hover {
     background-color: #343a40;
 }
 
-.search-songs{
-padding: 10px;
+.search-songs {
+    padding: 10px;
 }
 
 .cursor-pointer {
@@ -179,16 +203,17 @@ padding: 10px;
     z-index: 2000;
 }
 
-.input-group>.form-control:not(:first-child) {
-border-radius: 10px !important;
+.input-group > .form-control:not(:first-child) {
+    border-radius: 10px !important;
 
 }
 
-.buttons-sidebar-div{
+.buttons-sidebar-div {
     margin: auto;
 }
+
 .button-sidebar {
- margin-top: 100px;
+    margin-top: 100px;
     padding: 10px;
     color: #999999;
 }
@@ -215,26 +240,26 @@ border-radius: 10px !important;
 }
 
 
-.login-btn:hover{
+.login-btn:hover {
     background-color: rgba(0, 0, 0, 0.2);
     color: #686868;
 }
 
 
- .rhap_container {
-     box-sizing: border-box;
-     display: flex;
-     flex-direction: column;
-     line-height: 1 !important;
-     font-family: inherit;
-     height: 100px !important;
-     width: 100%;
-     min-width: 100px !important;
-     padding: 10px 50px 100px 200px!important;
-     background-color: #343a40 !important;
-     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-     margin-left: 50px !important;
- }
+.rhap_container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    line-height: 1 !important;
+    font-family: inherit;
+    height: 100px !important;
+    width: 100%;
+    min-width: 100px !important;
+    padding: 10px 50px 100px 200px !important;
+    background-color: #343a40 !important;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 50px !important;
+}
 
 .material-icons {
     color: #6c757d;
@@ -245,6 +270,7 @@ border-radius: 10px !important;
     background-color: #343a40 !important;
     color: white;
 }
+
 .rhap_play-pause-button {
     font-size: 40px;
     width: 40px;
