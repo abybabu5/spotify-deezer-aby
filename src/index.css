@@ -155,6 +155,7 @@ a:hover {
     width: 150px;
     border-radius: 50%;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .song {
@@ -218,6 +219,31 @@ a:hover {
     color: #999999;
 }
 
+.sign-btn {
+    background: white;
+    border: 1px antiquewhite solid;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: black;
+    cursor: default;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 17px;
+    margin-left: 15px;
+    margin-right: 25px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:100px;
+
+}
+.sign-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #1db954;
+}
 .login-btn {
     background: white;
     border: 1px antiquewhite solid;
@@ -244,7 +270,7 @@ a:hover {
 
 .login-btn:hover {
     background-color: rgba(0, 0, 0, 0.2);
-    color: #686868;
+    color: white;
 }
 
 
@@ -287,3 +313,9 @@ a:hover {
     height: 45px !important;
     padding-bottom: 12px !important;
 }
+
+.card-body {
+    padding: 0.25rem;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+

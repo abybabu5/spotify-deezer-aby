@@ -21,7 +21,7 @@ class SideBar extends Component {
                         <button type={'button'} className={'login-btn'}>LOGIN</button>
                     </div>
                     <div>
-                        <button type={'button'} className={'login-btn'}>SIGN UP</button>
+                        <button type={'button'} className={'sign-btn'}>SIGN UP</button>
                     </div>
                 </div>
 
