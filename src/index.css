@@ -112,9 +112,11 @@ a:hover {
 .artist-box {
     display: flex;
     align-items: center;
-    margin-top: 10px;
     color: white !important;
     background-color: white;
+    border-radius: 10px;
+    margin: auto !important;
+    padding: 5px 5px!important;
 }
 .table {
     color: white !important;
