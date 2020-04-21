@@ -229,13 +229,15 @@ a:hover {
     font-size: 20px;
     line-height: 17px;
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 25px;
     max-width: 100%;
     overflow: hidden;
     padding: 10px;
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width:100px;
+
 
 }
 
@@ -260,6 +262,7 @@ a:hover {
     margin-left: 200px !important;
     border-radius : 10px !important;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 .rhap_time {
     color: white !important;
