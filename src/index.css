@@ -120,7 +120,7 @@ a:hover {
     display: flex;
     align-items: center;
     color: white !important;
-    background-color: white;
+    background-color: #343a40;
     border-radius: 10px;
     margin: auto !important;
     padding: 5px 5px !important;
@@ -134,7 +134,7 @@ a:hover {
     font-size: 12px;
     font-weight: bold;
     flex: 1 1 auto;
-    color: black;
+    color: white;
 }
 
 .artist-name:hover {
