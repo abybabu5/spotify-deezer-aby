@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {ajax} from "rxjs/internal-compatibility";
-import {Card, ListGroup, ListGroupItem, Container, Col, Row} from "react-bootstrap";
+import {Card,Container, Col, Row} from "react-bootstrap";
 import Comments from "./Comments";
-import AudioPlayer from "react-h5-audio-player";
 import Track from "./Track";
 
 class AlbumsPage extends Component {

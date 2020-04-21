@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Row, Col, Card} from "react-bootstrap";
+import {Row, Col} from "react-bootstrap";
 import NavSpotify from "./NavSpotify";
 import SideBar from "./SideBar";
 import {BrowserRouter as Router, Route} from "react-router-dom";
@@ -9,7 +9,7 @@ import AudioPlayer from "react-h5-audio-player";
 import 'react-h5-audio-player/lib/styles.css';
 import AlbumsPage from "./AlbumsPage";
 import Artist from "./Artist";
-import AlbumComponent from "./AlbumComponent";
+
 
 
 class Main extends Component {

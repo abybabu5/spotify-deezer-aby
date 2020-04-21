@@ -121,7 +121,7 @@ export default class CommentForm extends Component {
         return (
             <div style={{'margin-top': '10px', color :'white'}}>
                 {this.state.comments &&
-                this.state.comments.map(comment => (
+                this.state.comments.reverse().map(comment => (
                     <div key={comment._id} style={{'border': 'solid 1px black', 'border-radius': '5px'}}>
                         <div>
                             {comment.author} commented {moment(comment.createdAt).fromNow()}

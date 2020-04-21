@@ -46,9 +46,7 @@ a:hover {
     text-decoration: chartreuse underline !important;
 }
 
-.material-icons {
-    color: white;
-}
+
 .nav-Link {
     position: fixed !important;
     align-content: center !important;
@@ -110,11 +108,13 @@ a:hover {
     margin: auto;
 }
 
+
 .artist-box {
     display: flex;
     align-items: center;
     margin-top: 10px;
     color: white !important;
+    background-color: white;
 }
 .table {
     color: white !important;
@@ -219,4 +219,33 @@ border-radius: 10px !important;
 }
 
 
+ .rhap_container {
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     line-height: 1 !important;
+     font-family: inherit;
+     height: 100px !important;
+     width: 100%;
+     min-width: 100px !important;
+     padding: 10px 50px 100px 200px!important;
+     background-color: #343a40 !important;
+     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+     margin-left: 50px !important;
+ }
 
+.material-icons {
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #343a40 !important;
+    color: white;
+}
+.rhap_play-pause-button {
+    font-size: 40px;
+    width: 40px;
+    height: 50px !important;
+    padding-bottom: 12px !important;
+}
