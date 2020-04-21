@@ -219,11 +219,11 @@ a:hover {
 }
 
 .login-btn {
-    background: initial;
+    background: white;
     border: 1px antiquewhite solid;
-    border-radius: 50px;
+    border-radius: 100px;
     box-sizing: border-box;
-    color: white;
+    color: black;
     cursor: default;
     display: inline-block;
     font-size: 20px;
@@ -247,18 +247,25 @@ a:hover {
 
 
 .rhap_container {
-    box-sizing: border-box;
+    box-sizing: inherit!important;
     display: flex;
     flex-direction: column;
     line-height: 1 !important;
     font-family: inherit;
     height: 100px !important;
-    width: 100%;
-    min-width: 100px !important;
+    width: 81% !important;
     padding: 10px 50px 100px 200px !important;
     background-color: #343a40 !important;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-    margin-left: 50px !important;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5) !important;
+    margin-left: 200px !important;
+    border-radius : 10px !important;
+    margin-bottom: 20px;
+}
+.rhap_time {
+    color: white !important;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .material-icons {

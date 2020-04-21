@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import SearchSongs from "./SearchSongs";
-import {Card, Col, Row,} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import {ajax} from "rxjs/internal-compatibility";
 import { Spinner } from 'reactstrap'
 import AlbumComponent from "./AlbumComponent";
