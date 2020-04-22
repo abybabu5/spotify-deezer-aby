@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import {Card, Col, Row } from "react-bootstrap";
-import AudioHelper from "../AudioHelper";
 
 
 class AlbumComponent extends Component {
     state = {paused: true};
-    audio = new AudioHelper();
 
     togglePlay  = () => {
         this.props.playSong(this.props.album);
@@ -23,8 +21,8 @@ class AlbumComponent extends Component {
                                 <div className="artist-box">
                                     <a href={'/artist/'+ album.artist.id}><img className="artist-picture" src={album.artist.picture} alt={'#'}/></a>
                                     <div className="artist-name">{album.artist.name}</div>
-                                    <div onClick={this.togglePlay}><i
-                                        className="material-icons cursor-pointer float-right">play_arrow</i></div>
+                                    <div className={'play-arrow'} onClick={this.togglePlay}><i
+                                        className="material-icons cursor-pointer">play_arrow</i></div>
                                 </div>
 
                             </Card.Text>}

@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import AudioHelper from "../AudioHelper";
+
 
 class Track extends Component {
     state = {paused: true};
-    audio = new AudioHelper();
 
     constructor(props) {
         super(props);
@@ -28,8 +27,8 @@ class Track extends Component {
                 <td>{track.artist.name}</td>
                 <td>{minutes}:{seconds}</td>
                 <td className="player-icon">
-                    <div onClick={this.togglePlay}><i
-                        className="material-icons float-right">play_arrow</i></div>
+                    <div onClick={this.togglePlay} className="play-circle"><i
+                        className="material-icons">play_arrow</i></div>
                 </td>
             </tr>
         );

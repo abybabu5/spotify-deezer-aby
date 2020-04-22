@@ -11,12 +11,18 @@ import AlbumsPage from "./AlbumsPage";
 import Artist from "./Artist";
 
 
-
 class Main extends Component {
     state = {album: null};
- playSong = (album) => {
-    this.setState({album})
-};
+    // function needed to set the track on the music player, this function is passed to the child components to
+    // play the song
+    playSong = (album) => {
+        this.setState({album})
+    };
+
+    closePlayer = () => {
+        this.setState({album: null})
+    }
+
     render() {
         return (
             <>
@@ -39,24 +45,27 @@ class Main extends Component {
                         </div>
                         <div className={'col-10'}>
                             <Router>
-                                <Route path="/" exact  render={(props) => <Body {...props} playSong={this.playSong} />} />
-                                <Route path="/album/:albumId" render={(props) => <AlbumsPage {...props} playSong={this.playSong} />} />
-                                <Route path="/artist/:artistId" render={(props) => <Artist {...props} playSong={this.playSong} />} />
+                                <Route path="/" exact render={(props) => <Body {...props} playSong={this.playSong}/>}/>
+                                <Route path="/album/:albumId"
+                                       render={(props) => <AlbumsPage {...props} playSong={this.playSong}/>}/>
+                                <Route path="/artist/:artistId"
+                                       render={(props) => <Artist {...props} playSong={this.playSong}/>}/>
                             </Router>
                         </div>
                     </Row>
                     {this.state.album &&
-                    <Row className="sticky-bottom">
-                        <Col className={'col-12'}>
-                            <AudioPlayer
+                    <div className="sticky-bottom">
+                        <div onClick={this.closePlayer} className="player-close"><i
+                            className="material-icons float-right">clear</i></div>
+                        <div className="song-title">{this.state.album.title} / {this.state.album.artist.name}</div>
+                        <AudioPlayer
                                 autoPlay={true}
                                 // autoPlay={false}
                                 key={this.state.album.id}
+                                // set the url of the mp3 of the song to be played
                                 src={this.state.album.preview}
-                                onPlay={e => console.log("onPlay")}
-                                // other props here
-                            /></Col>
-                    </Row>}
+                                onPlay={e => console.log("onPlay")} />
+                    </div>}
                 </Container>
             </>
         );

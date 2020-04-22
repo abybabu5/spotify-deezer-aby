@@ -57,7 +57,7 @@ class Artist extends Component {
                     </div>
                 </div>
                 <div>
-                    <table className="table">
+                    <table className="table" cellSpacing={5}>
                         {tracks.data.map(track => <Track playSong={this.props.playSong} track={track} />)}
                     </table>
                 </div>

@@ -34,18 +34,18 @@ class Body extends Component {
             });
     }
 
-    componentDidMount = async () => {
+    componentDidMount =  () => {
         this.updateData();
     };
 
-
+    // this function will be called when the album data need to be rendered again
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (prevState.search !== this.state.search) {
             this.updateData();
         }
     }
-
-    searchFn(input) {
+    // this function will be called to bridge the search input with the state
+    searchFn = (input) => {
         this.setState({search: input});
     }
 
@@ -55,7 +55,7 @@ class Body extends Component {
             <>
 
                 <div className="mt-2 search-container">
-                        <SearchSongs searchFn={this.searchFn.bind(this)}/>
+                        <SearchSongs searchFn={this.searchFn}/>
                 </div>
 
                 <Row>

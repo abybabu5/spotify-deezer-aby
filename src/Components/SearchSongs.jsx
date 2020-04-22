@@ -6,9 +6,11 @@ import {debounceTime, map} from "rxjs/operators";
 class SearchSongs extends Component {
     constructor(props) {
         super(props);
-        this.inputSearch = React.createRef();
     }
     componentDidMount() {
+        // rxjs fromEvent will subscribe the keyup event chained with the debounce
+        // to avoid API calls while the user is typing
+        // then the searchFn from the parent component will called to fire the search
         fromEvent(document.getElementById("searchText"), "keyup")
             .pipe(
                 debounceTime(1000),

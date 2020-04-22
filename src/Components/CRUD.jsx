@@ -1,3 +1,4 @@
+// class for CRUD of comments
 export default class CRUD {
     username = "user13";
     password = "6c#k#ANpA&k^s3t2";

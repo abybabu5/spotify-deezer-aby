@@ -160,7 +160,10 @@ a:hover {
 
 .song {
     width: 100%;
+    margin-bottom: 15px;
 }
+
+
 
 .track-title {
     text-align: left;
@@ -282,13 +285,16 @@ a:hover {
     font-family: inherit;
     height: 100px !important;
     width: 81% !important;
-    padding: 10px 50px 100px 200px !important;
-    background-color: #343a40 !important;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5) !important;
     margin-left: 200px !important;
     border-radius : 10px !important;
     margin-bottom: 20px;
     margin-top: 10px;
+    background-color: #513939 !important;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+    padding-left: 10px!important;
+    padding-right: 40px!important;
 }
 .rhap_time {
     color: white !important;
@@ -300,11 +306,13 @@ a:hover {
 .material-icons {
     color: #6c757d;
     cursor: pointer;
+
 }
 
 .card {
     background-color: #343a40 !important;
     color: white;
+    margin-bottom: 15px;
 }
 
 .rhap_play-pause-button {
@@ -315,9 +323,72 @@ a:hover {
 }
 
 .card-body {
-    padding: 0.25rem;
+    padding: 0.25rem !important;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+
 }
 .card-link {
     color: white;
+}
+
+.sticky-bottom {
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+    padding: 10px!important;
+}
+
+
+.player-close i {
+    color: white;
+    position: relative;
+    bottom: -42px;
+    left: 100px
+}
+.play-arrow {
+    border: 1px black solid;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    display: flex;
+}
+
+.player-icon {
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.play-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-circle i {
+    font-size: 18px!important;
+}
+
+.play-arrow:hover {
+    background-color: #343a40;
+}
+
+.player-icon:hover {
+    background-color: #343a40;
+}
+
+.song-title {
+    background-color: #513939;
+    width: 384px;
+    text-align: left;
+    left: 210px;
+    position: relative;
+    bottom: -63px;
+    color: white;
+
+}
+.rhap_controls-section {
+    margin-top: 14px!important;
 }

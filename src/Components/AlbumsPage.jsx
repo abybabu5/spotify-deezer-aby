@@ -34,7 +34,7 @@ class AlbumsPage extends Component {
                             <Card.Img variant="top" src={this.state.album.cover_big}/>
                             <Card.Body>
                                 <Card.Title>{this.state.album.title}</Card.Title>
-                                <table className="song">
+                                <table className="song" cellSpacing={5}>
                                     {this.state.album.tracks.data.map(track =>
                                         <Track playSong={this.props.playSong} track={track}/>
                                     )}
