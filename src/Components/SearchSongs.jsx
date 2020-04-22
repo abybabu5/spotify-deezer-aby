@@ -7,6 +7,7 @@ class SearchSongs extends Component {
     constructor(props) {
         super(props);
     }
+
     componentDidMount() {
         // rxjs fromEvent will subscribe the keyup event chained with the debounce
         // to avoid API calls while the user is typing
@@ -24,15 +25,15 @@ class SearchSongs extends Component {
         return (
             <div className={'search-bar'}>
                 <InputGroup className="search-songs">
-                <InputGroup.Prepend>
-                    <InputGroup.Text id="basic-addon1">🎧</InputGroup.Text>
-                </InputGroup.Prepend>
-                <FormControl
-                    placeholder="🔍 Eg: Madonna"
-                    aria-label="Search"
-                    aria-describedby="basic-addon1" id="searchText"
-                />
-            </InputGroup>
+                    <InputGroup.Prepend>
+                        <InputGroup.Text id="basic-addon1">🎧</InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <FormControl
+                        placeholder="🔍 Eg: Madonna"
+                        aria-label="Search"
+                        aria-describedby="basic-addon1" id="searchText"
+                    />
+                </InputGroup>
             </div>
 
         );

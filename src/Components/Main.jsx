@@ -59,12 +59,12 @@ class Main extends Component {
                             className="material-icons float-right">clear</i></div>
                         <div className="song-title">{this.state.album.title} / {this.state.album.artist.name}</div>
                         <AudioPlayer
-                                autoPlay={true}
-                                // autoPlay={false}
-                                key={this.state.album.id}
-                                // set the url of the mp3 of the song to be played
-                                src={this.state.album.preview}
-                                onPlay={e => console.log("onPlay")} />
+                            autoPlay={true}
+                            // autoPlay={false}
+                            key={this.state.album.id}
+                            // set the url of the mp3 of the song to be played
+                            src={this.state.album.preview}
+                            onPlay={e => console.log("onPlay")}/>
                     </div>}
                 </Container>
             </>

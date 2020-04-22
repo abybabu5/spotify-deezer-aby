@@ -10,7 +10,7 @@ class NavSpotify extends Component {
                     <Nav className="mr-auto">
                         <div className={'nav-text'}><Nav.Link className="Nav" href="/">Home</Nav.Link></div>
                         <div className={'nav-text'}><Nav.Link className="Nav" href="#features">Features</Nav.Link></div>
-                        <div className={'nav-text'}> <Nav.Link className="Nav" href="#pricing">Pricing</Nav.Link></div>
+                        <div className={'nav-text'}><Nav.Link className="Nav" href="#pricing">Pricing</Nav.Link></div>
 
                     </Nav>
                 </Navbar>

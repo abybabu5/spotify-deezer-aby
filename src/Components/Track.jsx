@@ -9,7 +9,7 @@ class Track extends Component {
         this.myRef = React.createRef();
     }
 
-    togglePlay  = () => {
+    togglePlay = () => {
         this.props.playSong(this.props.track);
     };
 
@@ -34,4 +34,5 @@ class Track extends Component {
         );
     }
 }
+
 export default Track;

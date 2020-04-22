@@ -71,19 +71,23 @@ export default class CommentForm extends Component {
             this.crud.put(this.state.comment._id, data).then(r => {
                 console.log(r);
                 this.refreshData();
-                this.setState({ comment: {
+                this.setState({
+                    comment: {
                         rate: "",
                         message: ""
-                    }});
+                    }
+                });
             });
         } else {
             this.crud.post(data).then(r => {
                 console.log(r);
                 this.refreshData();
-                this.setState({ comment: {
+                this.setState({
+                    comment: {
                         rate: "",
                         message: ""
-                    }});
+                    }
+                });
             });
         }
     }
@@ -112,14 +116,14 @@ export default class CommentForm extends Component {
         if (c) {
             const editComment = JSON.parse(JSON.stringify(c));
             editComment.message = editComment.comment;
-            this.setState({ comment: editComment, rating: editComment.rate});
+            this.setState({comment: editComment, rating: editComment.rate});
         }
 
     }
 
     render() {
         return (
-            <div style={{'margin-top': '10px', color :'white'}}>
+            <div style={{'margin-top': '10px', color: 'white'}}>
                 {this.state.comments &&
                 this.state.comments.reverse().map(comment => (
                     <div key={comment._id} style={{'border': 'solid 1px black', 'border-radius': '5px'}}>

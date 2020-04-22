@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import SearchSongs from "./SearchSongs";
 import {Col, Row} from "react-bootstrap";
 import {ajax} from "rxjs/internal-compatibility";
-import { Spinner } from 'reactstrap'
+import {Spinner} from 'reactstrap'
 import AlbumComponent from "./AlbumComponent";
 
 
@@ -34,7 +34,7 @@ class Body extends Component {
             });
     }
 
-    componentDidMount =  () => {
+    componentDidMount = () => {
         this.updateData();
     };
 
@@ -44,6 +44,7 @@ class Body extends Component {
             this.updateData();
         }
     }
+
     // this function will be called to bridge the search input with the state
     searchFn = (input) => {
         this.setState({search: input});
@@ -55,11 +56,11 @@ class Body extends Component {
             <>
 
                 <div className="mt-2 search-container">
-                        <SearchSongs searchFn={this.searchFn}/>
+                    <SearchSongs searchFn={this.searchFn}/>
                 </div>
 
                 <Row>
-                    {!albums && <Col className="mt-7"><Spinner color="success" /></Col>}
+                    {!albums && <Col className="mt-7"><Spinner color="success"/></Col>}
                     {albums && albums.map(album =>
                         <Col className="col-3 align-content-center justify-content-center" key={albums.id}>
                             <AlbumComponent playSong={this.props.playSong} details={true} album={album}/>
@@ -71,4 +72,5 @@ class Body extends Component {
         );
     }
 }
-    export default Body;
+
+export default Body;

@@ -16,6 +16,7 @@ export default class CRUD {
             }
         ).then(response => response.json());
     }
+
     post(data) {
         return fetch(
             "https://strive-school-testing-apis.herokuapp.com/api/comments",
@@ -26,6 +27,7 @@ export default class CRUD {
             }
         ).then(response => response.json());
     }
+
     put(id, data) {
         return fetch(
             "https://strive-school-testing-apis.herokuapp.com/api/comments/" + id,
@@ -36,6 +38,7 @@ export default class CRUD {
             }
         ).then(response => response.json());
     }
+
     delete(id) {
         return fetch(
             "https://strive-school-testing-apis.herokuapp.com/api/comments/" + id,
